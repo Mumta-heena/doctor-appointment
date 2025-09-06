@@ -18,10 +18,11 @@ export interface DoctorsResponse {
   total: number;
 }
 
-export async function fetchSpecializations(): Promise<SpecializationsResponse> {
+export async function fetchSpecializations(): Promise<string[]> {
   const res = await api.get("/specializations");
-  return res.data;
+  return res.data; // string[]
 }
+
 
 export async function fetchDoctors(params: { page?: number; limit?: number; search?: string; specialization?: string }): Promise<DoctorsResponse> {
   const { page = 1, limit = 10, search, specialization } = params;

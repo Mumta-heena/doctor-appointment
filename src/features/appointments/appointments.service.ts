@@ -19,7 +19,7 @@ export interface Appointment {
 }
 
 export interface AppointmentsResponse {
-  appointments: Appointment[];
+  docs: Appointment[];
   totalPages: number;
   page: number;
   total: number;

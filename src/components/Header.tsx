@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className="w-full bg-white border-b">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="font-bold text-lg text-teal-600">EATSure — Appointments</Link>
+        <Link href="/" className="font-bold text-lg text-teal-600">Appointments</Link>
         <nav className="flex items-center gap-3">
           <Link href="/patient/dashboard" className={`text-sm ${pathname?.startsWith("/patient") ? "font-semibold" : "text-slate-600"}`}>Patient</Link>
           <Link href="/doctor/dashboard" className={`text-sm ${pathname?.startsWith("/doctor") ? "font-semibold" : "text-slate-600"}`}>Doctor</Link>
